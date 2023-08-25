@@ -1,0 +1,15 @@
+:root {
+  --body-bg: #010101;
+  --text-color: #efefef;
+  --text-color-2: #fff;
+  --accent-color: #f8c258;
+
+  --gray-3: #828282;
+  --gray-4: #bdbdbd;
+
+  --border-btn1: 1px solid var(--accent-color);
+  --padding-btn1: 15px 20px;
+
+  --card-padding: 20px;
+  --card-border: 1px solid #bdbdbd;
+}

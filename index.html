@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игорь блюмин главная страница</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="header__logo">
+            <img
+              class="header__logo-img"
+              src="./img/logo.svg"
+              alt="Игорь Блюмин логотип"
+            />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link"> Обо мне </a>
+              </li>
+              <li class="header__item header__item--dropdown">
+                <a href="#" class="header__link"> Песни </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Стихи </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Фото </a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__link"> Выступления </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Дискография </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__img-wrapper">
+              <img
+                src="./img/hero-img.png"
+                alt="Игорь Блюмин и пиано"
+                class="hero__img"
+              />
+            </div>
+            <div class="hero__content">
+              <p class="hero__paragraph paragraph-1">
+                Дорогой гость! Спасибо, что посетили мой сайт.
+                <br />
+                Моя музыка адресована в первую очередь тем поклонникам (и,
+                особенно, поклонницам) шансонной и бардовской песни, которые
+                любят жанр за лирику, выраженную в понятных и близких «взрослой»
+                аудитории музыкальных формах. По моему мнению, состоявшимся по
+                жизни людям хочется состоявшейся музыки.
+              </p>
+              <p class="hero__paragraph paragraph-1">
+                Песен, которые не «грузят» глобальными проблемами, не претендуют
+                на вселенские откровения и не будоражат попусту. Теплых песен,
+                способных примирить человека с самим собой и считать прожитые
+                годы не напрасными - песен, в которых даже нежданная любовь –
+                подарок с большой буквы.
+              </p>
+              <p class="hero__author">Ваш Игорь Блюмин.</p>
+            </div>
+            <div class="hero__scrolldown">
+              <img src="./img/scrolldown.svg" alt="Пожалуйста листайте вниз" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="last-news">
+        <div class="container">
+          <div class="last-news__inner">
+            <h2 class="last-news__title title-1">Последние новости</h2>
+            <ul class="last-news__list">
+              <li class="last-news__item">
+                <div class="last-news__img-wrapper">
+                  <img
+                    src="./img/demo/last-news.jpg"
+                    alt="Превью новости"
+                    class="last-news__img"
+                  />
+                </div>
+                <div class="last-news__content card">
+                  <p class="last-news__date paragraph-1">22.08.2023</p>
+                  <h6 class="last-news__name">Состоится выступление в клубе</h6>
+                  <a href="#" class="last-news__link button-1"> Подробнее </a>
+                </div>
+              </li>
+              <li class="last-news__item">
+                <div class="last-news__img-wrapper">
+                  <img
+                    src="./img/demo/last-news.jpg"
+                    alt="Превью новости"
+                    class="last-news__img"
+                  />
+                </div>
+                <div class="last-news__content card">
+                  <p class="last-news__date paragraph-1">22.08.2023</p>
+                  <h6 class="last-news__name">Состоится выступление в клубе</h6>
+                  <a href="#" class="last-news__link button-1"> Подробнее </a>
+                </div>
+              </li>
+              <li class="last-news__item">
+                <div class="last-news__img-wrapper">
+                  <img
+                    src="./img/demo/last-news.jpg"
+                    alt="Превью новости"
+                    class="last-news__img"
+                  />
+                </div>
+                <div class="last-news__content card">
+                  <p class="last-news__date paragraph-1">22.08.2023</p>
+                  <h6 class="last-news__name">Состоится выступление в клубе</h6>
+                  <a href="#" class="last-news__link button-1"> Подробнее </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="songs">
+        <div class="container">
+          <div class="songs__inner">
+            <h2 class="songs__title title-1">Песни</h2>
+            <div class="songs__content">
+              <ul class="songs__list">
+                <li class="songs__item player">
+                  <button class="player__start">
+                    <img src="./img/music-start.svg" alt="Включить музыку" />
+                  </button>
+                  <button class="player__stop">
+                    <img src="./img/music-stop.svg" alt="Выключить музыку" />
+                  </button>
+                  <div class="player__box">
+                    <div class="player__top">
+                      <div class="player__name title-4">Вот такие наши дни</div>
+                      <div class="player__time title-4">00:00 / 04:29</div>
+                    </div>
+                    <input
+                      class="player__song-duration"
+                      type="range"
+                      value="0"
+                    />
+                    <audio src="Вот такие наши дни.mp3"></audio>
+                  </div>
+                  <div class="player__volume-wrapper">
+                    <button class="player__volume-btn">
+                      <img src="./img/music-volume.svg" alt="Звук музыки " />
+                    </button>
+                    <input
+                      class="player__song-volume"
+                      type="range"
+                      value="100"
+                    />
+                  </div>
+                </li>
+                <li class="songs__item player">
+                  <button class="player__start">
+                    <img src="./img/music-start.svg" alt="Включить музыку" />
+                  </button>
+                  <button class="player__stop">
+                    <img src="./img/music-stop.svg" alt="Выключить музыку" />
+                  </button>
+                  <div class="player__box">
+                    <div class="player__top">
+                      <div class="player__name title-4">Вот такие наши дни</div>
+                      <div class="player__time title-4">00:00 / 04:29</div>
+                    </div>
+                    <input
+                      class="player__song-duration"
+                      type="range"
+                      value="0"
+                    />
+                    <audio src="Вот такие наши дни.mp3"></audio>
+                  </div>
+                  <div class="player__volume-wrapper">
+                    <button class="player__volume-btn">
+                      <img src="./img/music-volume.svg" alt="Звук музыки " />
+                    </button>
+                    <input
+                      class="player__song-volume"
+                      type="range"
+                      value="100"
+                    />
+                  </div>
+                </li>
+                <li class="songs__item player">
+                  <button class="player__start">
+                    <img src="./img/music-start.svg" alt="Включить музыку" />
+                  </button>
+                  <button class="player__stop">
+                    <img src="./img/music-stop.svg" alt="Выключить музыку" />
+                  </button>
+                  <div class="player__box">
+                    <div class="player__top">
+                      <div class="player__name title-4">Вот такие наши дни</div>
+                      <div class="player__time title-4">00:00 / 04:29</div>
+                    </div>
+                    <input
+                      class="player__song-duration"
+                      type="range"
+                      value="0"
+                    />
+                    <audio src="Вот такие наши дни.mp3"></audio>
+                  </div>
+                  <div class="player__volume-wrapper">
+                    <button class="player__volume-btn">
+                      <img src="./img/music-volume.svg" alt="Звук музыки " />
+                    </button>
+                    <input
+                      class="player__song-volume"
+                      type="range"
+                      value="100"
+                    />
+                  </div>
+                </li>
+                <li class="songs__item player">
+                  <button class="player__start">
+                    <img src="./img/music-start.svg" alt="Включить музыку" />
+                  </button>
+                  <button class="player__stop">
+                    <img src="./img/music-stop.svg" alt="Выключить музыку" />
+                  </button>
+                  <div class="player__box">
+                    <div class="player__top">
+                      <div class="player__name title-4">Вот такие наши дни</div>
+                      <div class="player__time title-4">00:00 / 04:29</div>
+                    </div>
+                    <input
+                      class="player__song-duration"
+                      type="range"
+                      value="0"
+                    />
+                    <audio src="Вот такие наши дни.mp3"></audio>
+                  </div>
+                  <div class="player__volume-wrapper">
+                    <button class="player__volume-btn">
+                      <img src="./img/music-volume.svg" alt="Звук музыки " />
+                    </button>
+                    <input
+                      class="player__song-volume"
+                      type="range"
+                      value="100"
+                    />
+                  </div>
+                </li>
+                <li class="songs__item player">
+                  <button class="player__start">
+                    <img src="./img/music-start.svg" alt="Включить музыку" />
+                  </button>
+                  <button class="player__stop">
+                    <img src="./img/music-stop.svg" alt="Выключить музыку" />
+                  </button>
+                  <div class="player__box">
+                    <div class="player__top">
+                      <div class="player__name title-4">Вот такие наши дни</div>
+                      <div class="player__time title-4">00:00 / 04:29</div>
+                    </div>
+                    <input
+                      class="player__song-duration"
+                      type="range"
+                      value="0"
+                    />
+                    <audio src="Вот такие наши дни.mp3"></audio>
+                  </div>
+                  <div class="player__volume-wrapper">
+                    <button class="player__volume-btn">
+                      <img src="./img/music-volume.svg" alt="Звук музыки " />
+                    </button>
+                    <input
+                      class="player__song-volume"
+                      type="range"
+                      value="100"
+                    />
+                  </div>
+                </li>
+                <li class="songs__item player">
+                  <button class="player__start">
+                    <img src="./img/music-start.svg" alt="Включить музыку" />
+                  </button>
+                  <button class="player__stop">
+                    <img src="./img/music-stop.svg" alt="Выключить музыку" />
+                  </button>
+                  <div class="player__box">
+                    <div class="player__top">
+                      <div class="player__name title-4">Вот такие наши дни</div>
+                      <div class="player__time title-4">00:00 / 04:29</div>
+                    </div>
+                    <input
+                      class="player__song-duration"
+                      type="range"
+                      value="0"
+                    />
+                    <audio src="Вот такие наши дни.mp3"></audio>
+                  </div>
+                  <div class="player__volume-wrapper">
+                    <button class="player__volume-btn">
+                      <img src="./img/music-volume.svg" alt="Звук музыки " />
+                    </button>
+                    <input
+                      class="player__song-volume"
+                      type="range"
+                      value="100"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div class="songs__img-wrapper">
+                <img src="./img/guitar.jpg" alt="Гитара" class="songs__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="speeches">
+        <div class="container">
+          <div class="speeches__inner">
+            <h2 class="speeches__title title-1">Выступления</h2>
+            <ul class="speeches__list">
+              <li class="speeches__item">
+                <h6 class="speeches__name title-3">Бард-Клуб “Альма-Матер”</h6>
+                <p class="speeches__date paragraph-2">
+                  22 мая 2011 г. "Майская теплота"
+                </p>
+                <a href="#" class="speeches__video-link">
+                  <img
+                    src="./img/demo/speeches.jpg"
+                    alt="Бард-Клуб “Альма-Матер” видео на ютубе"
+                    class="speeches__video-img"
+                  />
+                </a>
+                <div class="speeches__paragraph">
+                  Скачать видеофрагмент, Вы можете нажав на ссылку:
+                </div>
+                <a class="speeches__link link-download" href="#" download>
+                  И. Блюмин, П. Баталин "Майская теплота"
+                </a>
+              </li>
+              <li class="speeches__item">
+                <h6 class="speeches__name title-3">Бард-Клуб “Альма-Матер”</h6>
+                <p class="speeches__date paragraph-2">
+                  22 мая 2011 г. "Майская теплота"
+                </p>
+                <a href="#" class="speeches__video-link">
+                  <img
+                    src="./img/demo/speeches.jpg"
+                    alt="Бард-Клуб “Альма-Матер” видео на ютубе"
+                    class="speeches__video-img"
+                  />
+                </a>
+                <div class="speeches__paragraph">
+                  Скачать видеофрагмент, Вы можете нажав на ссылку:
+                </div>
+                <a class="speeches__link link-download" href="#" download>
+                  И. Блюмин, П. Баталин "Майская теплота"
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="speeches__btn button-1">
+              Посмотреть все выступления
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__inner">
+            <h2 class="gallery__title title-1">Фотографии</h2>
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+
+              <li class="gallery__item">
+                <a
+                  href="./img/demo/gallery.jpg"
+                  data-fancybox="gallery"
+                  class="gallery__link"
+                >
+                  <img
+                    src="./img/demo/gallery.jpg"
+                    alt="Фотография с выступления"
+                    class="gallery__img"
+                  />
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="gallery__btn button-1"
+              >Посмотреть все фотографии</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="poetry">
+        <div class="container">
+          <div class="poetry__inner">
+            <h2 class="poetry__title title-1">Стихи</h2>
+            <div class="poetry__content">
+              <div class="poetry__img-wrapper">
+                <img src="./img/poetry.png" alt="Стихи" class="poetry__img" />
+              </div>
+              <div class="poetry__text">
+                <p class="poetry__paragraph paragraph-3">
+                  Зачем страдать, невинно, безутешно?
+                  <br />
+                  Зачем друг другу ни строки не прошептать <br />
+                  Я молвлю Вам Вы в жизни так успешны
+                  <br />
+                  Чего же более мне Вам еще сказать?
+                </p>
+
+                <p class="poetry__paragraph paragraph-3">
+                  У Вас есть все – поклонники, карьера <br />
+                  Семейный быт и детский голосок <br />
+                  А я как прежде далеко не первый <br />
+                  Хоть и любовь я выдохнуть готов
+                </p>
+                <p class="poetry__paragraph paragraph-3">
+                  К чему слова и ноты обещанья <br />
+                  Который раз я верю и молчу <br />
+                  Вам непонятны муки ожиданья <br />
+                  И откровений я уж не хочу
+                </p>
+                <p class="poetry__paragraph paragraph-3">
+                  Я берегу мгновенья нашей встречи <br />
+                  Пусть сколь коротких, столь близких для меня <br />
+                  Храню молитвой сладостные речи <br />
+                  Что прорывались трепетом огня
+                </p>
+                <p class="poetry__paragraph paragraph-3">
+                  Вот так вся жизнь пройдет лишь в ожиданье <br />
+                  Вот так вся страсть утихнет навсегда<br />
+                  Но образ Ваш и мой обет желаний <br />
+                  Я сохраню на долгие года
+                </p>
+                <p class="poetry__paragraph paragraph-3">
+                  У Вас есть все – поклонники, карьера <br />
+                  Семейный быт и детский голосок <br />
+                  А я как прежде далеко не первый <br />
+                  Хоть и любовь я выдохнуть готов
+                </p>
+              </div>
+
+              <a href="#" class="poetry__btn button-1"> Читать все стихи </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="footer__logo" href="index.html">
+            <img src="./img/logo-centered.svg" alt="Игорь Блюмин логотип" />
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link footer__link--active" href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Обо мне </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Мои песни </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Мои стихи </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Фотографии </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Выступления </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Дискография </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Гостевая книга </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Соглашение об использовании
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__rights">
+            © 2008-2023 Игорь Блюмин. Все права защищены.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/musicPlayer.js"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>
