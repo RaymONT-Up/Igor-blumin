@@ -12,4 +12,6 @@
 
   --card-padding: 20px;
   --card-border: 1px solid #bdbdbd;
+
+  --animation-duration: 0.3s;
 }

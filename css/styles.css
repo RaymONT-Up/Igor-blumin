@@ -1,4 +1,38 @@
 /* header */
+.header__item--mob {
+  display: none;
+}
+.header__burger {
+  position: relative;
+  display: none;
+  width: 25px;
+  margin-right: 3px;
+  height: 21px;
+}
+.header__burger-line {
+  position: absolute;
+  background-color: var(--text-color);
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+
+  transition: all, var(--animation-duration);
+}
+.header__burger-line--1 {
+  top: 0;
+}
+.header__burger-line--2,
+.header__burger-line--3 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__burger-line--3 {
+  opacity: 0;
+}
+.header__burger-line--4 {
+  bottom: 0;
+}
+
 .header__inner {
   padding: 52px 0 13px 0;
   display: flex;
@@ -44,6 +78,11 @@
 }
 
 /* hero */
+
+.hero__img--mob {
+  display: none;
+}
+
 .hero__inner {
   position: relative;
   display: flex;

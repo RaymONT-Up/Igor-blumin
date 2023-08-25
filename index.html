@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <!-- Fancybox -->
     <link
       rel="stylesheet"
@@ -26,6 +27,9 @@
           </a>
           <nav class="header__nav">
             <ul class="header__list">
+              <li class="header__item header__item--mob">
+                <a href="index.html" class="header__link">Главная</a>
+              </li>
               <li class="header__item">
                 <a href="#" class="header__link"> Обо мне </a>
               </li>
@@ -47,6 +51,12 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger">
+            <span class="header__burger-line header__burger-line--1"></span>
+            <span class="header__burger-line header__burger-line--2"></span>
+            <span class="header__burger-line header__burger-line--3"></span>
+            <span class="header__burger-line header__burger-line--4"></span>
+          </button>
         </div>
       </div>
     </header>
@@ -61,6 +71,11 @@
                 alt="Игорь Блюмин и пиано"
                 class="hero__img"
               />
+              <img
+                src="./img/hero-mob.jpg"
+                alt="Игорь Блюмин на пиано"
+                class="hero__img--mob"
+              />
             </div>
             <div class="hero__content">
               <p class="hero__paragraph paragraph-1">
@@ -68,9 +83,11 @@
                 <br />
                 Моя музыка адресована в первую очередь тем поклонникам (и,
                 особенно, поклонницам) шансонной и бардовской песни, которые
-                любят жанр за лирику, выраженную в понятных и близких «взрослой»
-                аудитории музыкальных формах. По моему мнению, состоявшимся по
-                жизни людям хочется состоявшейся музыки.
+                <br class="br--mob" />
+                любят жанр за лирику, выраженную в <br class="br--mob" />
+                понятных и близких «взрослой» аудитории музыкальных формах. По
+                моему мнению, состоявшимся по жизни людям хочется состоявшейся
+                музыки.
               </p>
               <p class="hero__paragraph paragraph-1">
                 Песен, которые не «грузят» глобальными проблемами, не претендуют
@@ -81,13 +98,13 @@
               </p>
               <p class="hero__author">Ваш Игорь Блюмин.</p>
             </div>
-            <div class="hero__scrolldown">
+            <a class="hero__scrolldown" href="#last-news">
               <img src="./img/scrolldown.svg" alt="Пожалуйста листайте вниз" />
-            </div>
+            </a>
           </div>
         </div>
       </section>
-      <section class="last-news">
+      <section class="last-news" id="last-news">
         <div class="container">
           <div class="last-news__inner">
             <h2 class="last-news__title title-1">Последние новости</h2>
@@ -138,6 +155,7 @@
           </div>
         </div>
       </section>
+
       <section class="songs">
         <div class="container">
           <div class="songs__inner">
@@ -605,6 +623,7 @@
     </footer>
 
     <script src="./js/musicPlayer.js"></script>
+    <script src="./js/header.js"></script>
 
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
