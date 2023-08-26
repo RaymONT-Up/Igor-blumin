@@ -13,7 +13,6 @@ const menuOpen = () => {
   header.classList.add("menu--active");
 
   const scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-  console.log(scrollWidth);
 
   body.style.paddingRight = `${scrollWidth}px`;
   body.style.overflow = "hidden";

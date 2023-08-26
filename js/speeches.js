@@ -9,14 +9,17 @@ const swiper = new Swiper(".speeches__slider", {
   },
 
   breakpoints: {
-    320: {
+    0: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     800: {
+      slidesPerView: 2,
       spaceBetween: 50,
     },
     1000: {
       slidesPerView: 2,
+      spaceBetween: 112,
     },
   },
 });
