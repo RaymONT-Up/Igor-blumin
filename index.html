@@ -40,17 +40,20 @@
                 <a href="#" class="header__link"> Обо мне </a>
               </li>
               <li class="header__item header__item--dropdown">
-                <a href="#" class="header__link"> Песни </a>
+                <a href="#songs" class="header__link"> Песни </a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link"> Стихи </a>
+                <a href="#poetry" class="header__link"> Стихи </a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link"> Фото </a>
+                <a href="#gallery" class="header__link">
+                  <span>фото</span>
+                  <span class="header__link--mob">Фотографии</span>
+                </a>
               </li>
 
               <li class="header__item">
-                <a href="#" class="header__link"> Выступления </a>
+                <a href="#speeches" class="header__link"> Выступления </a>
               </li>
               <li class="header__item">
                 <a href="#" class="header__link"> Дискография </a>
@@ -116,13 +119,13 @@
             <h2 class="last-news__title title-1">Последние новости</h2>
             <ul class="last-news__list">
               <li class="last-news__item">
-                <div class="last-news__img-wrapper">
+                <a  href="#" class="last-news__img-wrapper">
                   <img
                     src="./img/demo/last-news.jpg"
                     alt="Превью новости"
                     class="last-news__img"
                   />
-                </div>
+                </a>
                 <div class="last-news__content card">
                   <p class="last-news__date paragraph-1">22.08.2023</p>
                   <h6 class="last-news__name">Состоится выступление в клубе</h6>
@@ -130,13 +133,13 @@
                 </div>
               </li>
               <li class="last-news__item">
-                <div class="last-news__img-wrapper">
+                <a href="#" class="last-news__img-wrapper">
                   <img
                     src="./img/demo/last-news.jpg"
                     alt="Превью новости"
                     class="last-news__img"
                   />
-                </div>
+                </a>
                 <div class="last-news__content card">
                   <p class="last-news__date paragraph-1">22.08.2023</p>
                   <h6 class="last-news__name">Состоится выступление в клубе</h6>
@@ -144,13 +147,13 @@
                 </div>
               </li>
               <li class="last-news__item">
-                <div class="last-news__img-wrapper">
+                <a href="#" class="last-news__img-wrapper">
                   <img
                     src="./img/demo/last-news.jpg"
                     alt="Превью новости"
                     class="last-news__img"
                   />
-                </div>
+                <a>
                 <div class="last-news__content card">
                   <p class="last-news__date paragraph-1">22.08.2023</p>
                   <h6 class="last-news__name">Состоится выступление в клубе</h6>
@@ -162,7 +165,7 @@
         </div>
       </section>
 
-      <section class="songs">
+      <section class="songs" id="songs">
         <div class="container">
           <div class="songs__inner">
             <h2 class="songs__title title-1">Песни</h2>
@@ -178,7 +181,7 @@
                   <div class="player__box">
                     <div class="player__top">
                       <div class="player__name title-4">Вот такие наши дни</div>
-                      <div class="player__time title-4">00:00 / 04:29</div>
+                      <div class="player__time title-4">00:00 / 00:00</div>
                     </div>
                     <input
                       class="player__song-duration"
@@ -208,7 +211,7 @@
                   <div class="player__box">
                     <div class="player__top">
                       <div class="player__name title-4">Вот такие наши дни</div>
-                      <div class="player__time title-4">00:00 / 04:29</div>
+                      <div class="player__time title-4">00:00 / 00:00</div>
                     </div>
                     <input
                       class="player__song-duration"
@@ -238,7 +241,7 @@
                   <div class="player__box">
                     <div class="player__top">
                       <div class="player__name title-4">Вот такие наши дни</div>
-                      <div class="player__time title-4">00:00 / 04:29</div>
+                      <div class="player__time title-4">00:00 / 00:00</div>
                     </div>
                     <input
                       class="player__song-duration"
@@ -268,7 +271,7 @@
                   <div class="player__box">
                     <div class="player__top">
                       <div class="player__name title-4">Вот такие наши дни</div>
-                      <div class="player__time title-4">00:00 / 04:29</div>
+                      <div class="player__time title-4">00:00 / 00:00</div>
                     </div>
                     <input
                       class="player__song-duration"
@@ -298,7 +301,7 @@
                   <div class="player__box">
                     <div class="player__top">
                       <div class="player__name title-4">Вот такие наши дни</div>
-                      <div class="player__time title-4">00:00 / 04:29</div>
+                      <div class="player__time title-4">00:00 / 00:00</div>
                     </div>
                     <input
                       class="player__song-duration"
@@ -328,7 +331,7 @@
                   <div class="player__box">
                     <div class="player__top">
                       <div class="player__name title-4">Вот такие наши дни</div>
-                      <div class="player__time title-4">00:00 / 04:29</div>
+                      <div class="player__time title-4">00:00 / 00:00</div>
                     </div>
                     <input
                       class="player__song-duration"
@@ -356,7 +359,7 @@
           </div>
         </div>
       </section>
-      <section class="speeches">
+      <section class="speeches" id="speeches">
         <div class="container">
           <div class="speeches__inner">
             <h2 class="speeches__title title-1">Выступления</h2>
@@ -417,7 +420,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <div class="gallery__inner">
             <h2 class="gallery__title title-1">Фотографии</h2>
@@ -426,7 +429,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -439,7 +442,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -452,7 +455,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -465,7 +468,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -478,7 +481,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -491,7 +494,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -504,7 +507,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -518,7 +521,7 @@
                 <li class="gallery__item swiper-slide">
                   <a
                     href="./img/demo/gallery.jpg"
-                    data-fancybox="gallery"
+                    data-fancybox="gallery-fancybox"
                     class="gallery__link"
                   >
                     <img
@@ -541,7 +544,7 @@
         </div>
       </section>
 
-      <section class="poetry">
+      <section class="poetry" id="poetry">
         <div class="container">
           <div class="poetry__inner">
             <h2 class="poetry__title title-1">Стихи</h2>

@@ -34,6 +34,11 @@ playerItems.forEach((playerItem) => {
     audioPlayer.currentTime = 0;
   });
 
+  audioPlayer.addEventListener("loadedmetadata", () => {
+    const currentTime = (audioPlayer.duration * songDurationSlider.value) / 100;
+    audioPlayer.currentTime = currentTime;
+  });
+
   songDurationSlider.addEventListener("input", () => {
     const currentTime = (audioPlayer.duration * songDurationSlider.value) / 100;
     audioPlayer.currentTime = currentTime;

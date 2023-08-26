@@ -1,4 +1,4 @@
-Fancybox.bind('[data-fancybox="gallery"]', {
+Fancybox.bind('[data-fancybox="gallery-fancybox"]', {
   backFocus: false,
 });
 

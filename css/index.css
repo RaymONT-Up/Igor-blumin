@@ -8,7 +8,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--text-color);
@@ -104,7 +106,10 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  text-decoration-line: underline;
+  text-decoration: underline;
+}
+.link-download:hover {
+  text-decoration: none;
 }
 
 .card {
@@ -124,6 +129,11 @@ body {
 
   border: var(--border-btn1);
   padding: var(--padding-btn1);
+  transition: all, var(--animation-duration);
+}
+.button-1:hover {
+  color: var(--text-color-2);
+  background-color: var(--accent-color);
 }
 
 img {

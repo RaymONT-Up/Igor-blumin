@@ -8,6 +8,10 @@
   width: 25px;
   margin-right: 3px;
   height: 21px;
+  cursor: pointer;
+}
+.header__burger:hover .header__burger-line {
+  background-color: var(--accent-color);
 }
 .header__burger-line {
   position: absolute;
@@ -58,8 +62,18 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-}
 
+  transition: color, var(--animation-duration);
+}
+.header__link--mob {
+  display: none;
+}
+.header__link--active {
+  color: var(--accent-color);
+}
+.header__link:hover {
+  color: var(--accent-color);
+}
 .header__item--dropdown .header__link {
   position: relative;
   padding-right: 28px;
@@ -141,6 +155,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+}
+.last-news__img-wrapper {
+  display: block;
 }
 .last-news__content {
   border-top: none;
@@ -411,6 +428,10 @@
   text-transform: uppercase;
 
   color: var(--text-color-2);
+  transition: color, var(--animation-duration);
+}
+.footer__link:hover {
+  color: var(--accent-color);
 }
 .footer__link--active {
   color: var(--accent-color);
