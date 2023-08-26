@@ -1,3 +1,35 @@
+@media (max-width: 1450px) {
+  /* footer */
+  .footer__list {
+    flex-direction: column;
+  }
+  .footer__item {
+    text-align: center;
+    width: 100%;
+  }
+  .footer__link {
+    display: block;
+  }
+  .footer__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  /*poetry  */
+  .poetry__content {
+    flex-direction: column;
+  }
+  .poetry__text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .poetry__btn {
+    width: fit-content;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1000px) {
   /* header */
   .header {
@@ -126,6 +158,7 @@
 @media (max-width: 900px) {
   .paragraph-1,
   .paragraph-2,
+  .paragraph-3,
   .link-download {
     font-size: 16px;
   }
@@ -164,6 +197,11 @@
   .speeches__paragraph {
     font-size: 14px;
   }
+
+  /* poetry  */
+  .poetry__img-wrapper {
+    margin-right: 0;
+  }
 }
 @media (max-width: 850px) {
   .hero__img-wrapper {
@@ -184,16 +222,29 @@
   .speeches__arrow-prev,
   .speeches__arrow-next {
     display: block;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
     transition: opacity, 0.3s;
   }
-  .speeches .speeches__arrow-prev.swiper-button-disabled,
-  .speeches .speeches__arrow-next.swiper-button-disabled {
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
     opacity: 0;
   }
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: block;
+    font-size: 31px;
+    font-weight: 600;
+  }
+
+  .speeches .swiper-button-next:after,
+  .speeches .swiper-button-prev:after {
     color: var(--body-bg);
   }
+
+  /* poetry */
 }
 @media (max-width: 600px) {
   .link-download {
@@ -212,6 +263,13 @@
   }
   .paragraph-2 {
     font-size: 12px;
+  }
+  .paragraph-3 {
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    line-height: normal;
   }
   .button-1 {
     color: var(--accent-color);
@@ -365,6 +423,9 @@
   }
 
   /* speeches */
+  .speeches__inner {
+    margin-bottom: 39px;
+  }
   .speeches__title {
     margin-bottom: 24px;
   }
@@ -401,15 +462,85 @@
     margin-left: 0;
   }
 
-  .speeches .swiper-button-next::after,
-  .speeches .swiper-button-prev::after {
-    font-size: 31px;
-    font-weight: 600;
-  }
   .speeches .swiper-button-next::after {
     padding: 13px 17px 0px 0px;
   }
   .speeches .swiper-button-prev::after {
     padding: 13px 0 0 17px;
+  }
+
+  /* gallery */
+  .gallery__inner {
+    margin-bottom: 39px;
+  }
+  .gallery__title {
+    margin-bottom: 35px;
+  }
+  .gallery__list {
+    height: 426px;
+    margin-bottom: 18px;
+  }
+  .gallery__btn {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .gallery__arrow-next,
+  .gallery__arrow-prev {
+    display: block;
+  }
+
+  .gallery .swiper-button-next::after,
+  .gallery .swiper-button-prev::after {
+    color: var(--text-color-2);
+    font-weight: 500;
+  }
+  .gallery__arrow-next {
+    margin-right: 14px;
+  }
+  .gallery__arrow-prev {
+    margin-right: 14px;
+  }
+
+  /* poerty */
+  .poetry__inner {
+    margin-bottom: 30px;
+  }
+  .poetry__box {
+    flex-direction: column;
+  }
+  .poetry__img-wrapper {
+    margin-bottom: 15px;
+  }
+  .poetry__title {
+    margin-bottom: 25px;
+  }
+  .poetry__paragraph:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .poetry__text {
+    margin-bottom: 15px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 23px 0;
+  }
+  .footer__logo {
+    max-width: 68px;
+    margin: 0 auto 24px auto;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+  .footer__nav {
+    margin-bottom: 24px;
+  }
+  .footer__rights {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%; /* 14.34px */
+    letter-spacing: 0.5px;
   }
 }
