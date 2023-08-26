@@ -13,6 +13,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -354,52 +359,64 @@
         <div class="container">
           <div class="speeches__inner">
             <h2 class="speeches__title title-1">Выступления</h2>
-            <ul class="speeches__list">
-              <li class="speeches__item">
-                <h6 class="speeches__name title-3">Бард-Клуб “Альма-Матер”</h6>
-                <p class="speeches__date paragraph-2">
-                  22 мая 2011 г. "Майская теплота"
-                </p>
-                <a href="#" class="speeches__video-link">
-                  <img
-                    src="./img/demo/speeches.jpg"
-                    alt="Бард-Клуб “Альма-Матер” видео на ютубе"
-                    class="speeches__video-img"
-                  />
-                </a>
-                <div class="speeches__paragraph">
-                  Скачать видеофрагмент, Вы можете нажав на ссылку:
-                </div>
-                <a class="speeches__link link-download" href="#" download>
-                  И. Блюмин, П. Баталин "Майская теплота"
-                </a>
-              </li>
-              <li class="speeches__item">
-                <h6 class="speeches__name title-3">Бард-Клуб “Альма-Матер”</h6>
-                <p class="speeches__date paragraph-2">
-                  22 мая 2011 г. "Майская теплота"
-                </p>
-                <a href="#" class="speeches__video-link">
-                  <img
-                    src="./img/demo/speeches.jpg"
-                    alt="Бард-Клуб “Альма-Матер” видео на ютубе"
-                    class="speeches__video-img"
-                  />
-                </a>
-                <div class="speeches__paragraph">
-                  Скачать видеофрагмент, Вы можете нажав на ссылку:
-                </div>
-                <a class="speeches__link link-download" href="#" download>
-                  И. Блюмин, П. Баталин "Майская теплота"
-                </a>
-              </li>
-            </ul>
+            <div class="speeches__slider swiper">
+              <ul class="speeches__list swiper-wrapper">
+                <li class="speeches__item swiper-slide">
+                  <h6 class="speeches__name title-3">
+                    Бард-Клуб “Альма-Матер”
+                  </h6>
+                  <p class="speeches__date paragraph-2">
+                    22 мая 2011 г. "Майская теплота"
+                  </p>
+                  <a href="#" class="speeches__video-link">
+                    <img
+                      src="./img/demo/speeches.jpg"
+                      alt="Бард-Клуб “Альма-Матер” видео на ютубе"
+                      class="speeches__video-img"
+                    />
+                  </a>
+                  <div class="speeches__paragraph">
+                    Скачать видеофрагмент, Вы можете нажав на ссылку:
+                  </div>
+                  <a class="speeches__link link-download" href="#" download>
+                    И. Блюмин, П. Баталин "Майская теплота"
+                  </a>
+                </li>
+                <li class="speeches__item swiper-slide">
+                  <h6 class="speeches__name title-3">
+                    Бард-Клуб “Альма-Матер”
+                  </h6>
+                  <p class="speeches__date paragraph-2">
+                    22 мая 2011 г. "Майская теплота"
+                  </p>
+                  <a href="#" class="speeches__video-link">
+                    <img
+                      src="./img/demo/speeches.jpg"
+                      alt="Бард-Клуб “Альма-Матер” видео на ютубе"
+                      class="speeches__video-img"
+                    />
+                  </a>
+                  <div class="speeches__paragraph">
+                    Скачать видеофрагмент, Вы можете нажав на ссылку:
+                  </div>
+                  <a class="speeches__link link-download" href="#" download>
+                    И. Блюмин, П. Баталин "Майская теплота"
+                  </a>
+                </li>
+              </ul>
+
+              <!-- If we need navigation buttons -->
+              <button class="speeches__arrow-prev swiper-button-prev"></button>
+              <button class="speeches__arrow-next swiper-button-next"></button>
+            </div>
+
             <a href="#" class="speeches__btn button-1">
               Посмотреть все выступления
             </a>
           </div>
         </div>
       </section>
+      <!--
       <section class="gallery">
         <div class="container">
           <div class="gallery__inner">
@@ -571,15 +588,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <a class="footer__logo" href="index.html">
             <img src="./img/logo-centered.svg" alt="Игорь Блюмин логотип" />
-          </a>
+          </a>z
           <nav class="footer__nav">
             <ul class="footer__list">
               <li class="footer__item">
@@ -620,7 +637,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/musicPlayer.js"></script>
     <script src="./js/header.js"></script>
@@ -629,5 +646,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="./js/gallery.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="./js/speeches.js"></script>
   </body>
 </html>

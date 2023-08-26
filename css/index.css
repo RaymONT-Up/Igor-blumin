@@ -38,6 +38,8 @@ body {
   line-height: normal;
   text-transform: uppercase;
 
+  white-space: nowrap;
+
   color: var(--text-color-2);
 }
 .title-1::after {

@@ -77,15 +77,92 @@
     width: 80px;
     height: auto;
   }
+
+  /* last news */
+  .last-news__list {
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+  .last-news__item {
+    display: flex;
+  }
+  .last-news__img-wrapper {
+    max-width: 31%;
+    width: 100%;
+  }
+  .last-news__content {
+    width: 100%;
+    border-top: var(--card-border);
+    border-left: none;
+  }
+  .last-news__link {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  /* songs */
+  .songs__list {
+    width: 100%;
+    max-width: 100%;
+  }
+  .songs__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .songs__img-wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+  }
+  .player__box {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
-  .paragraph-1 {
+  .paragraph-1,
+  .paragraph-2,
+  .link-download {
     font-size: 16px;
   }
+  .button-1 {
+    font-size: 18px;
+  }
+  .title-1 {
+    font-size: 28px;
+  }
+  .title-3 {
+    font-size: 24px;
+  }
+  .title-4 {
+    font-size: 20px;
+  }
 
+  /* hero */
   .hero__author {
     font-size: 22px;
+  }
+
+  /* songs */
+  .player__top {
+    margin-bottom: 10px;
+  }
+
+  .player__volume-wrapper {
+    display: none;
+  }
+  .player__box {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  /* speeches */
+  .speeches__paragraph {
+    font-size: 14px;
   }
 }
 @media (max-width: 850px) {
@@ -102,7 +179,30 @@
     display: none;
   }
 }
+@media (max-width: 800px) {
+  /* speeches */
+  .speeches__arrow-prev,
+  .speeches__arrow-next {
+    display: block;
+    transition: opacity, 0.3s;
+  }
+  .speeches .speeches__arrow-prev.swiper-button-disabled,
+  .speeches .speeches__arrow-next.swiper-button-disabled {
+    opacity: 0;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    color: var(--body-bg);
+  }
+}
 @media (max-width: 600px) {
+  .link-download {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
   .paragraph-1 {
     font-size: 12px;
     font-style: normal;
@@ -110,7 +210,37 @@
     line-height: 143.4%; /* 17.208px */
     letter-spacing: 0.6px;
   }
+  .paragraph-2 {
+    font-size: 12px;
+  }
+  .button-1 {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
+  .title-1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+    text-transform: none;
+  }
+  .title-3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .title-4 {
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+  }
+  /* header */
   .header__inner {
     padding: 18px 0 13px 0;
   }
@@ -124,6 +254,7 @@
   }
   .hero__inner {
     margin-top: 26px;
+    margin-bottom: 39px;
   }
 
   .hero__img-wrapper {
@@ -160,7 +291,125 @@
   .hero .br--mob {
     display: block;
   }
-}
 
-@media (max-width: 460px) {
+  /* last-news */
+  .last-news__inner {
+    margin-bottom: 40px;
+  }
+  .last-news__list {
+    grid-gap: 12px;
+  }
+  .last-news__title {
+    margin-bottom: 30px;
+  }
+  .last-news__date {
+    margin-bottom: 7px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%; /* 17.208px */
+    letter-spacing: 0.6px;
+
+    color: var(--gray-3, #828282);
+  }
+  .last-news__name {
+    margin-bottom: 19px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .last-news__link {
+    padding: 5px;
+  }
+  /* songs */
+  .songs__inner {
+    margin-bottom: 29px;
+  }
+  .songs__title {
+    margin-bottom: 27px;
+  }
+  .songs__item {
+    margin-bottom: 13px;
+    padding: 12px;
+  }
+  .songs__item:nth-child(5) {
+    margin-bottom: 0;
+  }
+
+  .songs__item:last-child {
+    display: none;
+  }
+
+  .player__song-duration,
+  .player__song-volume {
+    height: 8px;
+  }
+
+  .player__song-duration::-webkit-slider-thumb,
+  .player__song-volume::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+  }
+  .player__stop {
+    width: 19px;
+    margin-right: 0;
+    margin-left: 13px;
+    order: 2;
+  }
+  .player__start {
+    width: 14px;
+    margin-right: 13px;
+  }
+
+  /* speeches */
+  .speeches__title {
+    margin-bottom: 24px;
+  }
+  .speeches__name {
+    margin-bottom: 7px;
+  }
+  .speeches__date {
+    margin-bottom: 10px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%; /* 17.208px */
+    letter-spacing: 0.6px;
+  }
+  .speeches__paragraph {
+    margin-bottom: 3px;
+
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%; /* 14.34px */
+    letter-spacing: 0.5px;
+  }
+  .speeches__video-link {
+    margin-bottom: 8px;
+  }
+  .speeches__list {
+    margin-bottom: 15px;
+  }
+  .speeches__btn {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .speeches .swiper-button-next::after,
+  .speeches .swiper-button-prev::after {
+    font-size: 31px;
+    font-weight: 600;
+  }
+  .speeches .swiper-button-next::after {
+    padding: 13px 17px 0px 0px;
+  }
+  .speeches .swiper-button-prev::after {
+    padding: 13px 0 0 17px;
+  }
 }

@@ -171,10 +171,14 @@
 
 /* songs && player */
 
+.songs {
+  overflow-x: hidden;
+}
 .songs__inner {
   margin-bottom: 108px;
 }
 .songs__title {
+  z-index: 2;
   margin-bottom: 50px;
 }
 
@@ -270,14 +274,14 @@
 }
 
 /* speeches */
-
+.speeches__arrow-prev,
+.speeches__arrow-next {
+  display: none;
+}
 .speeches__inner {
   margin-bottom: 99px;
 }
 .speeches__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 112px;
   margin-bottom: 32px;
 }
 
